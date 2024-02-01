@@ -98,16 +98,16 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    "default":env.dj_db_url('DATABASE_URL')
-}
-
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
+#     "default":env.dj_db_url('DATABASE_URL')
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
