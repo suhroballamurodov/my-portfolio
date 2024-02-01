@@ -94,14 +94,13 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #         'USER': 'postgres',
 #         'PASSWORD': 'S1824s1824',
 #         'HOST': 'localhost', 
-#         'PORT': '5432',
+#         'PORT': '5432', 
 #     }
 # }
 
 DATABASES = {
     "default":env.dj_db_url('DATABASE_URL')
 }
-
 
 # DATABASES = {
 #     'default': {
