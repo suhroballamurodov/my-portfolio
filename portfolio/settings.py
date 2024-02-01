@@ -32,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-0d$loy2r-&g%s2qb9a!_sckr81x9-2z8ttqd+=%3v8^g3hbpfd"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool('DEBUG', default=False)
+DEBUG = False
 
 ALLOWED_HOSTS = ['.pythonanywhere.com','127.0.0.1']
 
@@ -156,15 +156,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-
-
-
-
-EMAIL_BACKEND = 'django.core.mail.backend.smpt.Email'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'suhrobbekallamurodov18@gmail.com'
-EMAIL_HOST_PASSWORD = 'S1824s1824' 
-EMAIL_PORT = 587 
-EMAIL_USE_TLS = True
-EMAIL_USER_SSL = False
